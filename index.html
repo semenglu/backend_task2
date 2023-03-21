@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>WebBackend2</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+        }
+
+        h1 {
+            color: aliceblue;
+            border-color: rgb(255, 255, 255);
+            background-color: rgba(43, 72, 226, 0.671);
+            border: 3px solid #fff;
+            width: 150px;
+            height: 100%;
+            text-align: center;
+
+        }
+
+        a {
+            color: rgb(4, 213, 250);
+        }
+
+        p {
+            border-color: rgb(255, 255, 255);
+            background-color: rgba(43, 72, 226, 0.671);
+            border: 3px solid #fff;
+            color: aliceblue;
+            font-size: large;
+            width: 100%;
+            height: 150%;
+            text-align: center;
+            padding: 1%;
+        }
+
+        footer {
+            border-color: rgb(255, 255, 255);
+            background-color: rgba(43, 76, 226, 0.815);
+            border: 3px solid #fff;
+            color: aliceblue;
+            font-size: large;
+            width: 100%;
+            height: 120%;
+        }
+    </style>
+</head>
+
+<header>
+
+
+</header>
+
+<body>
+    <h1 align="center">Задание 2</h1>
+    <p>Создали соединения c хостом kubsu-dev.ru по стандартному порту 80 в протокле сетевой печати RAW с помощью программы Putty </p>
+    
+
+
+    <p> Получили главную сайта kubsu-dev.ru  страницу методом GET в протоколе HTTP 1.0
+        <br> По умолчанию сервер отвечает по протоколу HTTP 1.1
+    </p>
+    <img src="1.png" alt="первый скриншот">
+
+
+    <p>Получили внутреннюю страницу сайта u52980.kubsu-dev.ru методом GET в протоколе HTTP 1.1 </p>
+    <img src="2 (2).png" alt="второй скриншот">
+
+
+    <p>Определили информацию о файле file.tar.gz, не скачивая его. 
+        <br>Для получения информации о файле был использован HEAD запрос.
+        Данная информация содержится в заголовке ответа в графе "Content-Length" и состaвляет 11335 байт
+    </p>
+    <img src="3.jpg" alt="третий скриншот">
+
+
+    <p> Определили медиатип расположенного на удаленном сервере. ресурса /image.png
+        <br>Для определения медиатипа был использован HEAD запрос
+        Данная информация содержится в заголовке ответа в графе "Content-Type"
+    </p>
+    <img src="4.jpg" alt="четвертый скриншот">
+
+
+    <p> Отправили комментарий на сервер по адресу u52980.kubsu-dev.ru/index.php 
+        <br>Для отправки комментария был использован POST запрос в теле которого был указан сам комментарий.
+        В ответе от сервера был получен отправленный комментарий, а также строка с текстом Hello world
+    </p>
+    <img src="5.jpg" alt="пятый скриншот">
+
+
+    <p> Получили первые 100 байт файла /file.tar.gz
+        <br> Для их получения был использован GET запрос с заголовком Range
+        В заголовке Range указано что нужно получить именно первые 100 байт из файла </p>
+    <img src="6.jpg" alt="шестой скриншот">
+
+
+    <p>Определили кодировку ресурса /index.php.
+        <br> Для этого был отправлен GET запрос с заголовком Accept-Charset, в котором была установлена кодировка utf-8 </p>
+    <img src="7.jpg" alt="седьмой скриншот">
+
+
+
+    <footer>
+        <h4 align="center">(c) Глуховский Семён</h4>
+    </footer>
+
+</body>
